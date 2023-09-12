@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>ПИИС, лр 1</title>
+  </head>
+  <body>
+    <script>
+        var numberOfFilms = prompt("Сколько фильмов вы уже посмотрели?");
+        var personalMovieDB = {
+            count:numberOfFilms,
+            movies:{}
+        };
+        var i = 0
+        do {
+            var movieName = prompt("Один из последних просмотренных фильмов?");
+            var score = prompt("На сколько оцените его?");
+            if (movieName != null && score != null && movieName != '' && score != '' && movieName.length < 51){
+                personalMovieDB.movies[movieName] = score;
+                i++
+            }
+        } while (i!=2);
+        
+        console.log(personalMovieDB)
+    </script>
+  </body>
+</html>
