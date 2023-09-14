@@ -23,7 +23,7 @@ const createTable = (movies) => {
 }
 
 let personalMovieDB = {
-    privat: true,
+    privat: false,
     movies: {}
 };
 
