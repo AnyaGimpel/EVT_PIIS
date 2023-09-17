@@ -9,21 +9,20 @@ const createTable = (movies) => {
     cell2.innerHTML = "Оценка"
 
     for (let elem in movies) {
-        let row = table.insertRow(); // добавим строку
+        let row = table.insertRow(); 
     
-        let cell1 = row.insertCell(); // добавим ячейки
+        let cell1 = row.insertCell(); 
         let cell2 = row.insertCell();
         
-        cell1.innerHTML = elem; // вставим текст
+        cell1.innerHTML = elem; 
         cell2.innerHTML = movies[elem];   
     }
     
-    // Отобразим таблицу на странице
     document.body.appendChild(table);
 }
 
 let personalMovieDB = {
-    privat: true,
+    privat: false,
     movies: {}
 };
 
