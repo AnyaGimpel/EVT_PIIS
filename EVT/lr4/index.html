@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>ЭВТ, лр 4</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      background: #1e2048;
+    }
+
+    .box {
+      width: 600px;
+      padding: 40px;
+      position: absolute;
+      margin-top: 250px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: white;
+
+    }
+
+    textarea {
+      width: 500px;
+      height: 150px;
+    }
+
+    .blue {
+      background: #1e2048;
+      color: white;
+      margin-left: 20px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <form class="box" action="index.html" method="post">
+    <h1>
+      <center>Регистрация</center>
+    </h1>
+    <p align="center"><img src="1.jpg" width="370" height="250" /></p>
+    <p>
+      <center>Здравствуйте! Данная форма необходима для регистрации в школу волшебства Хогвартс. Внимательно заполняйте
+        все
+        поля
+        и в случае, если вы будете избраны, ждите сову с письмом. Удачи!</center>
+    </p>
+
+    <fieldset>
+      <legend><b>Личные данные</b></legend>
+
+      <label>Имя: <input type="text" required></label>
+      <label>Фамилия: <input type="text" required></label><br><br>
+      <label>Дата рождения: <input type="date" required></label><br>
+      <div>
+        <p>Укажите ваш пол:</p>
+        <input type="radio" id="Choice1" name="пол" />
+        <label for="Choice1">Женский</label>
+
+        <input type="radio" id="Choice2" name="пол" />
+        <label for="Choice2">Мужской</label>
+
+        <input type="radio" id="Choice3" name="пол" />
+        <label for="Choice3">Другой</label>
+      </div><br>
+      <label>Фотография: <input type="file" required></label><br>
+    </fieldset><br>
+
+    <fieldset>
+      <legend><b>Контакты</b></legend>
+      <label> Номер телефона в формате +375-хх-ххх-хх-хх: <input type="tel"
+          pattern="+375[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required></label><br><br>
+      <label>Электронная почта: <input type="email" required></label>
+      <label> Пароль: <input type="password" required></label>
+    </fieldset><br>
+
+    <fieldset>
+      <legend><b>Процесс обучения</b></legend>
+      <div>
+        <p>Выберете желаемые дисциплины:</p>
+        <center>
+          <input type="checkbox" id="сhoice1" />
+          <label for="сhoice1">Трансфигурация </label>
+
+          <input type="checkbox" id="сhoice2" />
+          <label for="сhoice2">Заклинания </label>
+
+          <input type="checkbox" id="сhoice3" />
+          <label for="сhoice3">Зельеварение </label>
+
+          <input type="checkbox" id="сhoice4" />
+          <label for="сhoice4">Травология </label><br>
+
+          <input type="checkbox" id="сhoice5" />
+          <label for="сhoice5"> Защита от темных искусств</label>
+        </center>
+      </div><br>
+      <label>Сколько волшебных палочек хотите заказать: <input type="number" min="0" max="5" required></label>
+    </fieldset><br>
+
+    <fieldset>
+      <legend><b>Кратко опишите свои интересы и увлечения</b></legend>
+      <p><textarea name="О себе"></textarea></p>
+    </fieldset><br>
+
+    <p><center>
+      <input type="reset">
+      <input type="submit" class="blue">
+    </center></p> 
+
+  </form>
+
+</body>
+
+</html>
