@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #shirt-details {
+            display: flex;
+            flex-direction: column;
+            width: 65%;
+            margin: 0 auto;
+            justify-content: center;
+            height: 85vh;
+        }
+
+        #text-style {
+            margin-top: 5px;
+            margin-left: 10px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        #image-price-container {
+            display: flex;
+            align-items: center;
+        }
+
+        #shirt-name {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 45px;
+            margin-bottom: 30px;
+        }
+
+        #shirt-image {
+            margin-right: 10px;
+        }
+
+        #shirt-price {
+            font-size: 30px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin-left: 10px;
+        }
+
+        #shirt-description {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: #464646;
+            margin-left: 10px;
+        }
+
+        #front-button,
+        #back-button {
+            height: 40px;
+            width: 80px;
+            margin-left: 10px;
+            margin-bottom: 15px;
+            background-color: #918de8;
+            border: 0px;
+            border-radius: 7px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .color-button {
+            height: 40px;
+            width: 80px;
+            margin-left: 10px;
+            background-color: #918de8;
+            background-color: var(--button-color, #918de8);
+            border-radius: 7px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 16px;
+            color: #000;
+        }
+
+        #close-button {
+            height: 30px;
+            width: 70px;
+            background-color: #918de8;
+            border: 0px;
+            border-radius: 7px;
+            margin-top: 120px;
+            margin-left: 10px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="shirt-details">
+        <center><div id="shirt-name"></div></center>
+        <div id="image-price-container">
+            <img id="shirt-image" alt="Front Image">
+            <div>
+                <p id="shirt-price"></p>
+                <p id="shirt-description"></p>
+                <p id="text-style">Side:</p>
+                <button id="front-button">Front</button>
+                <button id="back-button">Back</button>
+                <p id="text-style">Color:</p>
+                <div id="color-buttons-container"></div>
+                <button id="close-button" onclick="goBack()">Go Back</button>
+            </div>
+        </div>
+    </div>
+    <script src="details.js"></script>
+</body>
+
+</html>

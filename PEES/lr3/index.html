@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    .shirt-container {
+      padding: 3%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .shirt {
+      width: 30%;
+      margin-bottom: 20px;
+      padding: 10px;
+      border: 5px solid #918de8;
+      border-radius: 20px;
+    }
+
+    .shirt img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .shirt-buttons {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    .shirt-buttons button {
+      padding: 15px 30px;
+      border: none;
+      border-radius: 5px;
+      background-color: #918de8;
+      color: #fff;
+      cursor: pointer;
+      margin: 0 50px;
+    }
+
+    .shirt-buttons button:first-child {
+      margin-right: 5px;
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.4);
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .modal-content {
+      background-color: #fefefe;
+      margin: 15% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+      max-width: 600px;
+      border-radius: 15px;
+    }
+
+    .modal-close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .modal-close:hover,
+    .modal-close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="shirts-container" class="shirt-container"></div>
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span id="modal-close" class="modal-close">&times;</span>
+      <div class="shirt-images">
+        <img id="modal-front-image" src="" alt="Front Image" height="300" width="250">
+        <img id="modal-back-image" src="" alt="Back Image" height="300" width="250">
+      </div>
+      <h2 id="modal-name"></h2>
+      <p id="modal-price"></p>
+    </div>
+  </div>  
+  <script src="main.js"></script>
+</body>
+
+</html>
