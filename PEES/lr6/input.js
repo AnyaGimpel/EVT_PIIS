@@ -24,42 +24,6 @@ const move = (e) => {
   div.style.top = y + 'px';
 };
 
-// // Обработчик события изменения размера элемента с помощью двух пальцев
-// const pinchStart = (e) => {
-//   const touch1 = e.touches[0];
-//   const touch2 = e.touches[1];
-
-//   initialDistance = Math.hypot(touch2.clientX - touch1.clientX, touch2.clientY - touch1.clientY);
-//   currentScale = 1;
-// };
-
-// const pinchMove = (e) => {
-//   const touch1 = e.touches[0];
-//   const touch2 = e.touches[1];
-
-//   const newDistance = Math.hypot(touch2.clientX - touch1.clientX, touch2.clientY - touch1.clientY);
-//   const scale = newDistance / initialDistance;
-
-//   const newWidth = currentWidth * scale;
-//   const newHeight = currentHeight * scale;
-
-//   // Проверяем, чтобы новая ширина и высота не были меньше минимально возможного значения
-//   const минимальная_ширина = 50; // Замените на ваше значение
-//   const минимальная_высота = 50; // Замените на ваше значение
-//   const minWidth = Math.max(минимальная_ширина, newWidth);
-//   const minHeight = Math.max(минимальная_высота, newHeight);
-
-//   div.style.width = minWidth + 'px';
-//   div.style.height = minHeight + 'px';
-
-//   currentScale = scale;
-// };
-
-// const pinchEnd = () => {
-//   currentWidth *= currentScale;
-//   currentHeight *= currentScale;
-// };
-
 // Перебираем каждый элемент и добавляем обработчики событий
 targets.forEach((target) => {
   let intervalId = null;
@@ -92,8 +56,6 @@ targets.forEach((target) => {
       if (isFollowingMod) {
         isFollowingMod = false;
         workspace.removeEventListener('touchmove', move);
-        workspace.removeEventListener('touchmove', pinchMove);
-        workspace.removeEventListener('touchend', pinchEnd);
         return;
       } else {
         isFollowingMod = true;
@@ -111,9 +73,6 @@ targets.forEach((target) => {
     currentHeight = div.offsetHeight;
 
     workspace.addEventListener('touchmove', move);
-    workspace.addEventListener('touchstart', pinchStart);
-    workspace.addEventListener('touchmove', pinchMove);
-    workspace.addEventListener('touchend', pinchEnd);
   });
 
   document.addEventListener('touchend', (e) => {
@@ -122,13 +81,9 @@ targets.forEach((target) => {
       div.style.top = previousPositionY + 'px';
       isFollowingMod = false;
       workspace.removeEventListener('touchmove', move);
-      workspace.removeEventListener('touchmove', pinchMove);
-      workspace.removeEventListener('touchend', pinchEnd);
     }
     if (!isFollowingMod) {
       workspace.removeEventListener('touchmove', move);
-      workspace.removeEventListener('touchmove', pinchMove);
-      workspace.removeEventListener('touchend', pinchEnd);
     }
   });
 
