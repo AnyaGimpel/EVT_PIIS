@@ -1,0 +1,149 @@
+html {
+    font-family: sans-serif;
+  }
+
+body {
+  margin: 0;
+}
+
+header {
+  background: rgb(52, 206, 142);
+  height: 100px;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  line-height: 100px;
+  margin: 0;
+}
+
+button {
+  margin: 50px;
+  font-size: 20px;
+  background-color: red;
+  animation: vibrate 0.3s infinite;
+}
+
+button:hover {
+  animation-play-state: paused;
+  background-color: green;
+}
+
+@keyframes vibrate {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(5px); }
+}
+
+a {
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  position: relative;
+}
+
+a:hover {
+  color: green;
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: green;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+a:hover::after {
+  transform: scaleX(1);
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(400px) scaleY(0.7);
+  }
+  50% {
+    transform: translateY(200px);
+  }
+  65% {
+    transform: translateY(400px) scaleY(0.8);
+    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  }
+  80% {
+    transform: translateY(350px);
+  }
+  90% {
+    transform: translateY(400px) scaleY(0.9);
+    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1.4);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+
+.ball {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  border-radius: 50%;
+  position: relative;
+  animation: fall 2s infinite;
+}
+
+
+
+.ball_newton {
+  float: left; 
+  position: relative;
+  margin-top: 500px; 
+  left: 150px; 
+  width: 50px; 
+  height: 50px;
+  background: blue;
+  border-radius: 100%; 
+  transform-origin: 50% -150px;
+
+  animation: none;
+}
+
+.ball_newton:nth-child(1) {
+  animation: ball1 0.7s infinite alternate 0.7s ease-out;
+}
+.ball_newton:nth-child(5) {
+  animation: ball5 0.7s infinite alternate ease-out;
+}
+
+@keyframes ball1 {
+  0%,
+  50% {
+    transform: rotate(0);
+  } 
+  100% {
+    transform: rotate(30deg);
+  }
+}
+@keyframes ball5 {
+  0%,
+  50% {
+    transform: rotate(0);
+  } 
+  100% {
+    transform: rotate(-30deg);
+  }
+}
+
