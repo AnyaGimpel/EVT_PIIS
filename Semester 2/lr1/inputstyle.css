@@ -1,0 +1,57 @@
+/* центрирование */
+@media (min-width: 1441px) { 
+    body { 
+    background-color: #dcdcdb; 
+    width: 100%; 
+    max-width: 1440px; 
+    margin-left: auto; 
+    margin-right: auto; 
+    } 
+}
+
+/*якорные ссылки */
+ul {
+    list-style-type: none; 
+}
+
+ul li a {
+    text-decoration: none; 
+    color: black; 
+}
+
+img {
+    border-radius: 15px;
+    width: 400px;
+    height: 250px;
+    margin-right: 43px; 
+}
+
+#year{
+    font-weight:bold;
+}
+
+@font-face {
+	font-family: 'font1'; 
+	src: url("Debby.ttf"); 
+}
+@font-face {
+	font-family: 'font2'; 
+	src: url("Sunday.ttf"); 
+}
+@font-face {
+	font-family: 'my_font'; 
+	src: url("vertopal.com_my_font.ttf"); 
+}
+
+#film1{
+    font-family: 'font1';
+    text-align: center;
+}
+#film2{
+    font-family: 'font2';
+    text-align: right;
+}
+#film3{
+    font-family: 'my_font';
+    text-align: left;
+}
