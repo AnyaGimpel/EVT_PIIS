@@ -1,0 +1,84 @@
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  background: rgb(241, 128, 245);
+  height: 100px;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  line-height: 100px;
+  margin: 0;
+}
+
+h2 {
+  text-align: center;
+}
+
+article {
+  padding: 10px;
+  margin: 10px;
+  background: rgba(232, 154, 211, 0.178);
+}
+
+#btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+#container{
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#container2{
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#container3{
+  display: flex;
+  align-items: center;
+  height: 200px;
+}
+
+
+button {
+  margin: 0 10px;
+  padding: 0;
+  border: none;
+  background: none;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+/* Основные стили */
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 4px;
+  color: #fff;
+  background-color: rgb(233, 84, 240);
+  text-align: center;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+/* При наведении */
+button:hover {
+  background-color: #dc07f8;
+}
+
+/* При нажатии */
+button:active {
+  background-color: #003c63;
+}

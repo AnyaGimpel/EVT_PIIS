@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Flex</title>
+</head>
+
+<body>
+    <header>
+        <h1>Flex-direction</h1>
+    </header>
+
+    <div id="btn">
+        <button id="btn1">ROW</button>
+        <button id="btn2">ROW-REVERSE</button>
+        <button id="btn3">COLUMN</button>
+        <button id="btn4">COLUMN-REVERSE</button>
+    </div>
+
+    <section id="container">
+        <article>
+            <h2>1</h2>
+        </article>
+        <article>
+            <h2>2</h2>
+        </article>
+        <article>
+            <h2>3</h2>
+        </article>
+        <article>
+            <h2>4</h2>
+        </article>
+    </section>
+
+    <div id="btn">
+        <button id="btn5">FLEX-START</button>
+        <button id="btn6">FLEX-END</button>
+        <button id="btn7">CENTER</button>
+    </div>
+
+    <section id="container2">
+        <article>
+            <h2>1</h2>
+        </article>
+        <article>
+            <h2>2</h2>
+        </article>
+        <article>
+            <h2>3</h2>
+        </article>
+        <article>
+            <h2>4</h2>
+        </article>
+    </section>
+
+    <div id="btn">
+        <button id="btn8">FLEX-START</button>
+        <button id="btn9">FLEX-END</button>
+        <button id="btn10">CENTER</button>
+    </div>
+
+    <section id="container3">
+        <article>
+            <h2>1</h2>
+        </article>
+        <article>
+            <h2>2</h2>
+        </article>
+        <article>
+            <h2>3</h2>
+        </article>
+        <article>
+            <h2>4</h2>
+        </article>
+    </section>
+
+
+    <script>
+        document.getElementById("btn1").addEventListener("click", function () {
+            var divElement = document.getElementById("container");
+            divElement.style.flexFlow = "row nowrap";
+        });
+
+        document.getElementById("btn2").addEventListener("click", function () {
+            var divElement = document.getElementById("container");
+            divElement.style.flexFlow = "row-reverse";
+        });
+
+        document.getElementById("btn3").addEventListener("click", function () {
+            var divElement = document.getElementById("container");
+            divElement.style.flexFlow = "column";
+        });
+
+        document.getElementById("btn4").addEventListener("click", function () {
+            var divElement = document.getElementById("container");
+            divElement.style.flexFlow = "column-reverse";
+        });
+
+
+        document.getElementById("btn5").addEventListener("click", function () {
+            var divElement = document.getElementById("container2");
+            divElement.style.justifyContent = "flex-start";
+        });
+
+        document.getElementById("btn6").addEventListener("click", function () {
+            var divElement = document.getElementById("container2");
+            divElement.style.justifyContent = "flex-end";
+        });
+
+        document.getElementById("btn7").addEventListener("click", function () {
+            var divElement = document.getElementById("container2");
+            divElement.style.justifyContent = "center";
+        });
+
+
+
+        document.getElementById("btn8").addEventListener("click", function () {
+            var divElement = document.getElementById("container3");
+            divElement.style.alignItems = "flex-start";
+        });
+
+        document.getElementById("btn9").addEventListener("click", function () {
+            var divElement = document.getElementById("container3");
+            divElement.style.alignItems = "flex-end";
+        });
+
+        document.getElementById("btn10").addEventListener("click", function () {
+            var divElement = document.getElementById("container3");
+            divElement.style.alignItems = "center";
+        });
+
+        
+    </script>
+
+</body>
+
+</html>

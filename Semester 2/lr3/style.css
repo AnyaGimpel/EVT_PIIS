@@ -1,0 +1,56 @@
+html {
+    font-family: sans-serif;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  header {
+    background: rgb(241, 128, 245);
+    height: 100px;
+  }
+
+  h1 {
+    text-align: center;
+    color: white;
+    line-height: 100px;
+    margin: 0;
+  }
+
+  article {
+    padding: 10px;
+    margin: 10px;
+    background: rgba(232, 154, 211, 0.178);
+  }
+
+  #group_1_2_3 {
+    display: flex;
+  }
+
+  #group_4_5_6  {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #group_7_8 {
+    display: flex;
+    flex: 1 200px;
+  }
+
+  #group_9_10 {
+    display: flex;
+    flex: 1 200px;
+  }
+
+  #group_7-10 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #group_4-10 {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+
