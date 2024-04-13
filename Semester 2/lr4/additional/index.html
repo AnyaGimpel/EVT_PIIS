@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Grid</title>
+</head>
+
+<body>
+    <header>
+        <h1>Grid-template-columns</h1>
+    </header>
+
+    <div id="btn">
+        <button id="btn1">100PX 50PX 100PX</button>
+        <button id="btn2">50PX 1FR 50PX</button>
+        <button id="btn3">REPEAT(3, 80PX)</button>
+    </div>
+    
+    <div class="grid">
+        <div class = "child"> <h3>1</h3> </div>
+        <div class = "child"> <h3>2</h3> </div>
+        <div class = "child"> <h3>3</h3> </div>
+        <div class = "child"> <h3>4</h3> </div>
+        <div class = "child"> <h3>5</h3> </div>
+        <div class = "child"> <h3>6</h3> </div>
+        <div class = "child"> <h3>7</h3> </div>
+        <div class = "child"> <h3>8</h3> </div>
+        <div class = "child"> <h3>9</h3> </div>
+    </div>
+
+    <header>
+        <h1>Grid-template-rows</h1>
+    </header>
+
+    <div id="btn">
+        <button id="btn4">80PX 50PX 80PX</button>
+        <button id="btn5">50PX 1FR 50PX</button>
+        <button id="btn6">REPEAT(3, 60PX)</button>
+    </div>
+    
+    <div class="grid1">
+        <div class = "child"> <h3>1</h3> </div>
+        <div class = "child"> <h3>2</h3> </div>
+        <div class = "child"> <h3>3</h3> </div>
+        <div class = "child"> <h3>4</h3> </div>
+        <div class = "child"> <h3>5</h3> </div>
+        <div class = "child"> <h3>6</h3> </div>
+        <div class = "child"> <h3>7</h3> </div>
+        <div class = "child"> <h3>8</h3> </div>
+        <div class = "child"> <h3>9</h3> </div>
+    </div>
+
+    <header>
+        <h1>Grid-template-areas</h1>
+    </header>
+
+    <div id="btn">
+        <button id="btn7">«AAA» «BCC» «BCC» </button>
+        <button id="btn8">«BBA» «BBC» «BBC» </button>
+        <button id="btn9">«AA.» «.BB» «CC.» </button>
+    </div>
+    
+    <div class="grid2">
+        <div class = "child1"> <h3>1</h3> </div>
+        <div class = "child1"> <h3>2</h3> </div>
+        <div class = "child1"> <h3>3</h3> </div>
+    
+    </div>
+
+
+    <script>
+        document.getElementById("btn1").addEventListener("click", function () {
+            var divElement = document.querySelector(".grid");
+            divElement.style.gridTemplateColumns = "100px 50px 100px";
+        });
+
+        document.getElementById("btn2").addEventListener("click", function () {
+            var divElement = document.querySelector(".grid");
+            divElement.style.gridTemplateColumns= "50px 1fr 50px";
+        });
+
+        document.getElementById("btn3").addEventListener("click", function () {
+            var divElement = document.querySelector(".grid");
+            divElement.style.gridTemplateColumns = "repeat(3, 80px)";
+        });
+
+
+        document.getElementById("btn4").addEventListener("click", function () {
+            var divElement = document.querySelector(".grid1");
+            divElement.style.gridTemplateRows = "80px 50px 80px";
+        });
+
+        document.getElementById("btn5").addEventListener("click", function () {
+            var divElement = document.querySelector(".grid1");
+            divElement.style.gridTemplateRows= "50px 1fr 50px";
+        });
+
+        document.getElementById("btn6").addEventListener("click", function () {
+            var divElement = document.querySelector(".grid1");
+            divElement.style.gridTemplateRows = "repeat(3, 60px)";
+        });
+
+
+        document.getElementById("btn7").addEventListener("click", function () {
+            var divElement = document.querySelector(".grid2");
+            divElement.style.gridTemplateAreas = '"a a a" "b c c" "b c c"';
+        });
+
+        document.getElementById("btn8").addEventListener("click", function () {
+            var divElement = document.querySelector(".grid2");
+            divElement.style.gridTemplateAreas= '"b b a" "b b c" "b b c"';
+        });
+
+        document.getElementById("btn9").addEventListener("click", function () {
+            var divElement = document.querySelector(".grid2");
+            divElement.style.gridTemplateAreas = '"a a ." ". b b" "c c ."';
+        });
+        
+    </script>
+
+</body>
+
+</html>

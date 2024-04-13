@@ -1,0 +1,189 @@
+/* центрирование 
+@media (min-width: 1441px) { 
+    body {  
+        width: 100%; 
+        max-width: 1440px; 
+        margin-left: auto; 
+        margin-right: auto;
+    } 
+}
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    padding: 0;
+    width: 100%;
+    margin: 0;
+    position: relative; /* добавлено для абсолютного позиционирования дочерних элементов */
+    overflow: hidden; /* чтобы обрезать изображение, если оно выходит за пределы хедера */
+
+}
+
+.header-content {
+    position: absolute;
+    top: 0; /* располагаем по верхнему краю */
+    left: 0; /* выравниваем по левому краю */
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box; /* чтобы padding не добавлялся к ширине */
+    z-index: 1; /* чтобы располагался поверх изображения */
+    background: linear-gradient(to bottom, rgba(59, 58, 58, 0.758), rgba(78, 77, 77, 0)); /* Градиент от полностью непрозрачного к полностью прозрачному */
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+nav ul li a:hover {
+    color: #abc232;
+}
+
+@media (max-width: 1199px) {
+
+    nav {
+        display: none;
+    }
+
+    nav ul {
+        display: none;
+    }
+    .burger-menu {
+        display: block;
+        color: #ffffff;
+    }
+
+    .menu-toggle-btn {
+        display: block;
+        margin-right: 0px;
+        background: none;
+        border: none;
+        position: relative;
+        z-index: 1000;
+    }
+}
+
+@media (min-width: 1200px) {
+    nav {
+        display: block;
+    }
+
+    nav ul {
+        display: block;
+    }
+    .menu-toggle-btn {
+        display: none;
+    }
+}
+
+main {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.main_img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0; 
+    padding: 0; 
+    position: relative;
+}
+
+.main_conteiner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%; /* Примерная ширина контента */
+    max-width: 800px; /* Максимальная ширина контента */
+    text-align: center; /* Центрируем содержимое по горизонтали */
+}
+
+.main_title {
+    color: #ffffff;
+    font-size: 42px;
+    text-align: center; /* Выравнивание текста по центру */
+}
+
+.highlighted-text {
+    color: #abc232; /* Цвет для выделенной части текста */
+}
+
+.search-box {
+    display: flex;
+    flex-direction: column; /* Располагаем элементы в столбец */
+    align-items: center; /* Центрируем элементы по горизонтали */
+    background-color: none;
+    border-radius: 20px; /* Закругление углов */
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.search-box input[type="text"] {
+    width: 60%; /* Ширина поля ввода, учитывая ширину кнопки */
+    height: 30px;
+    padding: 8px;
+    border: none;
+    border-radius: 10px; /* Закругление углов */
+    margin-bottom: 10px; /* Отступ между полем ввода и кнопкой */
+    font-size: 16px;
+}
+
+.search-box button {
+    background-color: #abc232;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px; /* Закругление углов */
+    width: calc(60% + 16px);
+    font-size: 18px;
+    padding: 12px 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Плавное изменение цвета при наведении */
+}
+
+.search-box button:hover {
+    background-color: #899e51; /* Цвет при наведении */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+header h1 {
+    margin: 20px; /* Увеличьте значение для увеличения расстояния */
+}
+
+@media (max-width: 380px) {
+    body {
+        overflow-x: auto; /* Добавляем горизонтальную полосу прокрутки */
+    }
+}

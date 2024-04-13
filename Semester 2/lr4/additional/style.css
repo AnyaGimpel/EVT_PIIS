@@ -1,0 +1,101 @@
+html {
+    font-family: sans-serif;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  header {
+    background: rgb(241, 128, 245);
+    height: 100px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: white;
+    line-height: 100px;
+    margin: 0;
+  }
+  
+  h2 {
+    text-align: center;
+    width: 150px;
+  }
+
+  h3 {
+    text-align: center;
+  }
+  
+  .child {
+    padding: 10px;
+  /*   margin: 10px; */
+    border: 1px solid #fff;
+    background: rgba(232, 154, 211, 0.178);
+  }
+  .child1 {
+    padding: 10px;
+  /*   margin: 10px; */
+    border: 1px solid #fff;
+    background: rgba(232, 154, 211, 0.178);
+  }
+  
+  #btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .grid{
+    display: grid;
+    grid-template-columns: 100px 50px 100px;
+  }
+
+  .grid1{
+    display: grid;
+    grid-template-rows: 100px 50px 100px;
+    grid-template-columns: 100px 100px 100px;
+  }
+
+  .grid2{
+    display: grid;
+    grid-template-areas: '"a a a" "b c c" "b c c"';
+    height: 100%;
+  }
+
+  .child1:nth-child(1){grid-area: a;}
+  .child1:nth-child(1){grid-area: b;}
+  .child1:nth-child(1){grid-area: c;}
+
+  button {
+    margin: 0 10px;
+    padding: 0;
+    border: none;
+    background: none;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+  }
+  
+  /* Основные стили */
+  button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 4px;
+    color: #fff;
+    background-color: rgb(233, 84, 240);
+    text-align: center;
+    text-decoration: none;
+    transition: 0.2s;
+  }
+  
+  /* При наведении */
+  button:hover {
+    background-color: #dc07f8;
+  }
+  
+  /* При нажатии */
+  button:active {
+    background-color: #003c63;
+  }
+  
