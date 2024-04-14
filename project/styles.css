@@ -185,12 +185,19 @@ article {
 #advantages-section {
     display: flex;
 }
+
 @media (max-width: 768px) {
-    /* Изменяем стили элементов article для мобильных устройств */
-    article {
-        display: block; /* Переносим элементы article на новую строку */
-        width: 100%; /* Занимаем всю доступную ширину */
-        text-align: center; /* Центрируем текст внутри article */
+    #advantages-section {
+        flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
+    }
+    #advantages-section article {
+        width: 100%; /* Элементы занимают всю доступную ширину */
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    #advantages-section article {
+        width: 48%; /* Элементы занимают половину доступной ширины */
     }
 }
 
