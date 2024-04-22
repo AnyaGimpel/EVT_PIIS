@@ -3,6 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -59,6 +61,26 @@
                 <p>Особенная атмосфера в компании единомышленников</p>
             </article>
         </section>
+
+        <p class="title">Погрузись в красоту мира <span class="highlighted-text">вместе с нами!</span> </p>
+        <div class="slider">
+            <input type="radio" id="slide1" name="slide" checked>
+            <input type="radio" id="slide2" name="slide">
+            <input type="radio" id="slide3" name="slide">
+            
+            <div class="slides">
+                <div class="slide" style="background-image: url('img/slider_1.webp')"></div>
+                <div class="slide" style="background-image: url('img/slider_2.webp')"></div>
+                <div class="slide" style="background-image: url('img/slider_3.webp')"></div>
+            </div>
+        
+            <div class="navigation">
+                <label for="slide1"></label>
+                <label for="slide2"></label>
+                <label for="slide3"></label>
+            </div>
+        </div>
+        
     </main>
 
     <script>

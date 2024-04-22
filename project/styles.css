@@ -124,6 +124,12 @@ main {
 .main_title {
     color: #ffffff;
     font-size: 40px;
+    text-align: center; 
+}
+
+.title {
+    color: #000000;
+    font-size: 40px;
     text-align: center; /* Выравнивание текста по центру */
 }
 
@@ -201,6 +207,87 @@ article {
     }
 }
 
+@media (min-width: 1201px) {
+    #advantages-section article {
+        width: 48%; /* Элементы занимают половину доступной ширины */
+    }
+}
+
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .slider {
+        width: 350px; 
+        height: 200px; 
+    }
+    .slide {
+        height: 200px; 
+    }
+}
+
+@media (min-width: 769px) {
+    .slider {
+        width: 700px;
+        height: 400px;
+    }
+    .slide {
+        height: 400px; 
+    }
+}
+
+.slides {
+    display: flex;
+}
+
+.slide {
+    flex: 0 0 100%; /* Каждый слайд занимает всю ширину */
+    background-size: cover;
+}
+
+input[type="radio"] {
+    display: none; /* Скрываем радиокнопки */
+}
+
+.navigation {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navigation label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #a09e9e;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+
+#slide1:checked ~ .slides .slide:nth-child(1) {
+    transform: translateX(0);
+}
+
+#slide2:checked ~ .slides .slide:nth-child(2) {
+    transform: translateX(-100%);
+}
+
+#slide3:checked ~ .slides .slide:nth-child(3) {
+    transform: translateX(-200%);
+}
+
+#slide1:checked ~ .navigation label:nth-child(1),
+#slide2:checked ~ .navigation label:nth-child(2),
+#slide3:checked ~ .navigation label:nth-child(3) {
+    background-color: #abc232; /* Изменяем цвет активной точки */
+}
 
 
 header h1 {
