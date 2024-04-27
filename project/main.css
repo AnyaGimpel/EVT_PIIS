@@ -19,7 +19,7 @@ main {
 article {
     padding: 10px;
     margin: 10px;
-    background: rgba(170, 169, 169, 0.17);
+    background: #aaa9a93d;
     border-radius: 10px;
     text-align: center;
   }

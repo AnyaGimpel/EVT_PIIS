@@ -20,7 +20,7 @@ header {
     padding: 20px;
     box-sizing: border-box; /* чтобы padding не добавлялся к ширине */
     z-index: 1; /* чтобы располагался поверх изображения */
-    background: linear-gradient(to bottom, rgba(59, 58, 58, 0.758), rgba(78, 77, 77, 0)); /* Градиент от полностью непрозрачного к полностью прозрачному */
+    background: linear-gradient(to bottom, #3b3a3af3, #4e4d4d00); /* Градиент от полностью непрозрачного к полностью прозрачному */
 }
 
 .list ul li {
@@ -119,7 +119,7 @@ header {
     background-color: #ffffff;
     width: 350px;
     height: 100%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px #00000025;
     transform: translateX(350px);
     transition: transform 0.3s ease;
     z-index: 999;
@@ -230,6 +230,10 @@ footer {
     }
     .logo {
         width: 50px;
+    }
+    .menu-toggle-btn img{
+        width: 20px;
+        height: 20px;
     }
 
     .footer-content {
