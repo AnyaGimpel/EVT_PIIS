@@ -27,7 +27,7 @@ iframe{
     height: 300px
 }
 
-button {
+.details button {
     background-color: #abc232;
     color: #ffffff;
     border: none;
@@ -39,7 +39,7 @@ button {
     transition: background-color 0.3s ease; /* Плавное изменение цвета при наведении */
 }
 
-button:hover {
+.details button:hover {
     background-color: #899e51; /* Цвет при наведении */
 }
 
