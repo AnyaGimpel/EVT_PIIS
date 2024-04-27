@@ -17,12 +17,12 @@
             <div>
                 <img class="logo" src="img/logo.png" >
             </div>
-            <nav>
+            <nav class="list">
                 <ul>
                     <li><a href="">Главная</a></li>
                     <li><a href="">Каталог</a></li>
                     <li><a href="about_us.html">О нас</a></li>
-                    <li><a href="">Контакты</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
                     <li><a href="">Тема</a></li>
                 </ul>
             </nav>
@@ -38,6 +38,18 @@
             </div>
         </div>
     </header>
+
+    <div class="menu-content">
+        <nav class="site-list">
+            <ul>
+                <li><a href="main.html">Главная</a></li>
+                    <li><a href="">Каталог</a></li>
+                    <li><a href="about_us.html">О нас</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                    <li><a href="">Тема</a></li>
+            </ul>
+        </nav>
+    </div>
 
     <main>
         <section id="advantages-section">
@@ -101,7 +113,14 @@
     </footer>
 
     <script>
-        
+        document.addEventListener("DOMContentLoaded", function() {
+            const menuToggleBtn = document.querySelector('.menu-toggle-btn');
+            const menuContent = document.querySelector('.menu-content');
+
+            menuToggleBtn.addEventListener('click', function() {
+                menuContent.style.transform = 'translateX(0px)'
+            });
+        });
     </script>
 </body>
 

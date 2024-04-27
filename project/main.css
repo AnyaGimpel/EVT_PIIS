@@ -39,13 +39,13 @@ article {
 
 @media (min-width: 769px) and (max-width: 1200px) {
     #advantages-section article {
-        width: 48%; /* Элементы занимают половину доступной ширины */
+        width: 48%; 
     }
 }
 
 @media (min-width: 1201px) {
     #advantages-section article {
-        width: 48%; /* Элементы занимают половину доступной ширины */
+        width: 48%; 
     }
 }
 
@@ -127,7 +127,7 @@ input[type="radio"] {
 
 
 header h1 {
-    margin: 20px; /* Увеличьте значение для увеличения расстояния */
+    margin: 20px; 
 }
 
 

@@ -34,28 +34,28 @@ header {
    }
 }
 
-nav ul li {
+.list ul li {
     display: inline-block;
     margin-right: 30px;
     margin-left: 30px;
 }
 
-nav ul li a {
+.list ul li a {
     text-decoration: none;
     color: #ffffff;
 }
 
-nav ul li a:hover {
+.list ul li a:hover {
     color: #abc232;
 }
 
 @media (max-width: 1199px) {
 
-    nav {
+    .list {
         display: none;
     }
 
-    nav ul {
+    .list ul {
         display: none;
     }
     .burger-menu {
@@ -74,11 +74,11 @@ nav ul li a:hover {
 }
 
 @media (min-width: 1200px) {
-    nav {
+    .list {
         display: block;
     }
 
-    nav ul {
+    .list ul {
         display: block;
     }
     .menu-toggle-btn {
@@ -113,6 +113,38 @@ nav ul li a:hover {
     margin: 0; 
     padding: 0; 
     position: relative;
+}
+
+
+
+.menu-content {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #ffffff;
+    width: 350px;
+    height: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transform: translateX(350px);
+    transition: transform 0.3s ease;
+    z-index: 999;
+}
+
+.site-list ul li {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+.site-list ul li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.site-list ul li a:hover {
+    color: #899e51;
 }
 
 

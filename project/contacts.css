@@ -1,0 +1,10 @@
+main {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.title {
+    color: #000000;
+    font-size: 30px;
+    margin-left: 20px; 
+}
