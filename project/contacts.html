@@ -35,7 +35,7 @@
         <nav class="site-list">
             <ul>
                 <li><a href="main.html">Главная</a></li>
-                    <li><a href="">Каталог</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
                     <li><a href="about_us.html">О нас</a></li>
                     <li><a href="contacts.html">Контакты</a></li>
                     <li><a href="">Тема</a></li>
@@ -58,9 +58,9 @@
                 </div>
                 <div id="where">
                     <p><b>Где находится офис:</b></p>
-                    <p>Адрес: г. Минск, ул. Нёманская, 15</p>
+                    <a href="https://www.google.com/maps/search/г.+Минск,+ул.+Нёманская,+15" target="_blank">Адрес: г. Минск, ул. Нёманская, 15</a>
                 </div>
-                <button>Позвонить</button>
+                <button onclick="callNumber('+375291234566')">Позвонить</button>
             </div>
             <div class="map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d956.1858100542012!2d27.42308257307552!3d53.911203827078104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbc4cd2574c30d%3A0x5d906df2c2089634!2z0YPQuy4g0J3RkdC80LDQvdGB0LrQsNGPIDE1LCDQnNC40L3RgdC6LCDQnNC40L3RgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwg0JHQtdC70LDRgNGD0YHRjA!5e0!3m2!1sru!2s!4v1714249009750!5m2!1sru!2s" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -74,10 +74,10 @@
         <div class="footer-content">
             <img class="logo_footer" src="img/logo.png">
             <div class="titles_footer">
-                <a class="footer_el">Главная</a>
-                <a class="footer_el">Каталог</a>
-                <a class="footer_el">О нас</a>
-                <a class="footer_el">Контакты</a>
+                <a class="footer_el" href="main.html">Главная</a>
+                <a class="footer_el" href="catalog.html">Каталог</a>
+                <a class="footer_el" href="about_us.html">О нас</a>
+                <a class="footer_el" href="contacts.html">Контакты</a>
             </div>
         </div>
         <div class="footer_flex">
@@ -95,6 +95,12 @@
                 menuContent.style.transform = 'translateX(0px)'
             });
         });
+
+        function callNumber(phoneNumber) {
+            window.location.href = 'tel:' + phoneNumber;
+        }
+
+
     </script>
 </body>
 </html>

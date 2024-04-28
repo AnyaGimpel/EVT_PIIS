@@ -12,6 +12,7 @@ main {
 .info{
     display: flex;
     margin-left: 20px;
+    margin-right: 20px;
 }
 
 #contacts, #where{
@@ -37,10 +38,15 @@ iframe{
     padding: 12px 24px;
     cursor: pointer;
     transition: background-color 0.3s ease; /* Плавное изменение цвета при наведении */
+    margin-top: 20px;
 }
 
 .details button:hover {
     background-color: #899e51; /* Цвет при наведении */
+}
+
+#where a{
+    color: #000000;
 }
 
 @media (min-width: 1100px) {
