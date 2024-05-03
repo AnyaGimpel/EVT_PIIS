@@ -33,11 +33,15 @@ header {
     color: #ffffff;
 }
 
-.list ul li a:hover {
+.light-theme .list ul li a:hover {
     color: #abc232;
 }
 
-.main_img {
+.dark-theme .list ul li a:hover {
+    color: #db830f;
+}
+
+#main_img {
     width: 100%;
     height: auto;
     display: block;
@@ -45,6 +49,7 @@ header {
     padding: 0; 
     position: relative;
 }
+
 
 .main_conteiner {
     position: absolute;
@@ -63,14 +68,26 @@ header {
 }
 
 
-.highlighted-text {
+.light-theme .highlighted-text {
     color: #abc232; /* Цвет для выделенной части текста */
+}
+
+.dark-theme .highlighted-text {
+    color: #db830f; /* Цвет для выделенной части текста */
 }
 
 .logo {
     width: 100px;
     height: auto;
 }
+
+.theme-toggle-btn {
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+
 
 .search-box {
     display: flex;
@@ -92,7 +109,7 @@ header {
     font-size: 16px;
 }
 
-.search-box button {
+.light-theme .search-box button {
     background-color: #abc232;
     color: #ffffff;
     border: none;
@@ -104,8 +121,24 @@ header {
     transition: background-color 0.3s ease; /* Плавное изменение цвета при наведении */
 }
 
-.search-box button:hover {
-    background-color: #899e51; /* Цвет при наведении */
+.dark-theme .search-box button {
+    background-color: #db830f;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px; /* Закругление углов */
+    width: calc(60% + 16px);
+    font-size: 18px;
+    padding: 12px 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Плавное изменение цвета при наведении */
+}
+
+.light-theme .search-box button:hover {
+    background-color: #899e51; 
+}
+
+.dark-theme .search-box button:hover {
+    background-color: #b0944e; 
 }
 
 
@@ -137,8 +170,11 @@ header {
     color: #000000;
 }
 
-.site-list ul li a:hover {
+.light-theme .site-list ul li a:hover {
     color: #899e51;
+}
+.dark-theme .site-list ul li a:hover {
+    color: #db830f;
 }
 
 
@@ -164,6 +200,14 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.light-theme .footer_el:hover {
+    color: #899e51;
+}
+
+.dark-theme .footer_el:hover {
+    color: #db830f;
 }
 
 .footer_flex {
