@@ -1,18 +1,16 @@
 const applyTheme = (theme) => {
     const body = document.body;
     const themeToggleImg = document.getElementById('theme-toggle-img');
-    const mainImg = document.getElementById('main_img');
+    const mainImg1 = document.getElementById('logoImg');
 
     if (theme === 'dark') {
         body.classList.add('dark-theme');
         themeToggleImg.src = "img/icons8-солнце-50.png";
-        mainImg.src = "img/main_dark.jpg";
+        mainImg1.src = "img/main_dark1.jpg";
     } else {
         body.classList.add('light-theme');
         themeToggleImg.src = "img/icons8-солнце-50.png";
-        
-        mainImg.src = "img/main.jpg";
-
+        mainImg1.src = "img/main1.jpg";
     }
 
 }
@@ -28,7 +26,7 @@ const toggleTheme = () => {
     const body = document.body;
 
     const themeToggleImg = document.getElementById('theme-toggle-img');
-    const mainImg = document.getElementById('main_img');
+    const mainImg1 = document.getElementById('logoImg');
 
     if (body.classList.contains('light-theme')) {
         body.classList.remove('light-theme');
@@ -36,15 +34,14 @@ const toggleTheme = () => {
         localStorage.setItem('theme', 'dark');
 
         themeToggleImg.src = "img/icons8-солнце-50.png";
-        mainImg.src = "img/main_dark.jpg";
-
+        mainImg1.src = "img/main_dark1.jpg";
     } else {
         body.classList.remove('dark-theme');
         body.classList.add('light-theme');
         localStorage.setItem('theme', 'light');
 
         themeToggleImg.src = "img/icons8-солнце-50.png";
-        mainImg.src = "img/main.jpg";
+        mainImg1.src = "img/main1.jpg";
     }
 }
 

@@ -28,7 +28,7 @@ iframe{
     height: 300px
 }
 
-.details button {
+.light-theme .details button {
     background-color: #abc232;
     color: #ffffff;
     border: none;
@@ -41,8 +41,24 @@ iframe{
     margin-top: 20px;
 }
 
-.details button:hover {
+.dark-theme .details button {
+    background-color: #db830f;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px; /* Закругление углов */
+    width: 200px;
+    font-size: 18px;
+    padding: 12px 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Плавное изменение цвета при наведении */
+    margin-top: 20px;
+}
+
+.light-theme .details button:hover {
     background-color: #899e51; /* Цвет при наведении */
+}
+.dark-theme .details button:hover {
+    background-color: #b0944e; /* Цвет при наведении */
 }
 
 #where a{

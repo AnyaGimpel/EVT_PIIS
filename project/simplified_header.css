@@ -48,8 +48,11 @@ header {
     color: #ffffff;
 }
 
-.list ul li a:hover {
+.light-theme .list ul li a:hover {
     color: #abc232;
+}
+.dark-theme .list ul li a:hover {
+    color: #db830f;
 }
 
 .logo {
@@ -57,12 +60,18 @@ header {
     height: auto;
 }
 
+.theme-toggle-btn {
+    padding: 0;
+    border: none;
+    background: none;
+}
+
 .menu-toggle-btn img{
     width: 40px;
     height: 40px;
 }
 
-.main_img {
+#main_img1 {
     width: 100%;
     height: auto;
     display: block;
@@ -71,7 +80,14 @@ header {
     position: relative;
 }
 
-
+#logoImg {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0; 
+    padding: 0; 
+    position: relative;
+}
 
 .menu-content {
     position: fixed;
@@ -99,8 +115,11 @@ header {
     color: #000000;
 }
 
-.site-list ul li a:hover {
+.light-theme .site-list ul li a:hover {
     color: #899e51;
+}
+.dark-theme .site-list ul li a:hover {
+    color: #db830f;
 }
 
 
@@ -126,6 +145,14 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.light-theme .footer_el:hover {
+    color: #899e51;
+}
+
+.dark-theme .footer_el:hover {
+    color: #db830f;
 }
 
 .footer_flex {

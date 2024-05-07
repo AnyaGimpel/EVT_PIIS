@@ -8,10 +8,11 @@
     <title>О нас</title>
     <link rel="stylesheet" href="about_us.css">
     <link rel="stylesheet" href="simplified_header.css">
+    <script src="main.js"></script>
 </head>
 <body>
     <header>
-        <img class="main_img" src="img/main1.jpg">
+        <img id="main_img1" src="img/main1.jpg">
         <div class="header-content">
             <div>
                 <img class="logo" src="img/logo.png" >
@@ -22,7 +23,10 @@
                     <li><a href="catalog.html">Каталог</a></li>
                     <li><a href="about_us.html">О нас</a></li>
                     <li><a href="contacts.html">Контакты</a></li>
-                    <li><a href="">Тема</a></li>
+                    <li><button id="theme-toggle-btn" class="theme-toggle-btn">
+                        <img id="theme-toggle-img" src="img/icons8-солнце-50.png" alt="Сменить тему">
+                        </button>
+                    </li>
                 </ul>
             </nav>
             <button class="menu-toggle-btn">
