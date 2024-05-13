@@ -1,7 +1,13 @@
-main {
+.light-theme main {
     position: relative;
     width: 100%;
     overflow: hidden;
+}
+.dark-theme main {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: #eae0aa61;
 }
 .title {
     color: #000000;
@@ -50,8 +56,11 @@ main {
     margin-inline: 5%;
 }
 
-h4{
+.light-theme h4{
     color: #abc232;
+}
+.dark-theme h4{
+    color: #db830f;
 }
 
 article{

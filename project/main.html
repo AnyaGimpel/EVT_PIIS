@@ -12,7 +12,9 @@
 
 <body>
     <header>
-        <img id="main_img" src="img/main.jpg">
+        <div class="image-container"> 
+            <img id="main_img" src="img/main.jpg">
+        </div>
         <div class="header-content">
             <div>
                 <img class="logo" src="img/logo.png" >
@@ -24,7 +26,7 @@
                     <li><a href="about_us.html">О нас</a></li>
                     <li><a href="contacts.html">Контакты</a></li>
                     <li><button id="theme-toggle-btn" class="theme-toggle-btn">
-                        <img id="theme-toggle-img" src="img/icons8-солнце-50.png" alt="Сменить тему">
+                        <img id="theme-toggle-img" src="img/icons8-солнце-50.png" alt="Сменить тему" width="35px" height="35px">
                         </button>
                     </li>
                 </ul>
@@ -49,12 +51,16 @@
                     <li><a href="catalog.html">Каталог</a></li>
                     <li><a href="about_us.html">О нас</a></li>
                     <li><a href="contacts.html">Контакты</a></li>
-                    <li><a href="">Тема</a></li>
+                    <li><button id="theme-toggle-btn1" class="theme-toggle-btn">
+                        <img id="theme-toggle-img1" src="img/icons8-солнце-2.png" alt="Сменить тему" width="35px" height="35px">
+                        </button>
+                    </li>
             </ul>
         </nav>
     </div>
 
     <main>
+        <p class="title">Наши <span class="highlighted-text">преимущества:</span> </p>
         <section id="advantages-section">
             <article>
                 <h4>Безопасная оплата</h4>
@@ -96,6 +102,7 @@
                 <label for="slide3"></label>
             </div>
         </div>
+        <p></p>
         
     </main>
     <footer>
@@ -107,6 +114,9 @@
                 <a class="footer_el" href="about_us.html">О нас</a>
                 <a class="footer_el" href="contacts.html">Контакты</a>
             </div>
+            <a href="#main_img">
+                <img class="footer_arrow" src="img/icons8-стрелка.png">
+            </a>
         </div>
         <div class="footer_flex">
             <a class="footer_el">Адрес: г. Минск, ул. Нёманская, 15</a>
@@ -167,6 +177,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const themeToggleBtn = document.getElementById('theme-toggle-btn');
     if (themeToggleBtn) {
         themeToggleBtn.addEventListener('click', toggleTheme);
+    }
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const themeToggleImg1 = document.getElementById('theme-toggle-img1'); 
+    if (themeToggleImg1) {
+        themeToggleImg1.addEventListener('click', () => { 
+            toggleTheme(); 
+        });
     }
 });
 

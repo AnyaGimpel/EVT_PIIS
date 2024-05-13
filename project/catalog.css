@@ -1,8 +1,15 @@
-main {
+.light-theme main {
     position: relative;
     width: 100%;
     overflow: hidden;
 }
+.dark-theme main {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: #eae0aa61;
+}
+
 .title {
     color: #000000;
     font-size: 30px;
@@ -28,7 +35,7 @@ main {
     font-size: 16px;
 }
 
-.search-box button {
+.light-theme .search-box button {
     background-color: #abc232;
     color: #ffffff;
     border: none;
@@ -40,9 +47,24 @@ main {
     transition: background-color 0.3s ease; /* Плавное изменение цвета при наведении */
     margin-left: 20px;
 }
+.dark-theme .search-box button {
+    background-color: #db830f;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px; /* Закругление углов */
+    width: 100px;
+    font-size: 18px;
+    padding: 12px 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Плавное изменение цвета при наведении */
+    margin-left: 20px;
+}
 
-.search-box button:hover {
+.light-theme .search-box button:hover {
     background-color: #899e51; /* Цвет при наведении */
+}
+.dark-theme .search-box button:hover {
+    background-color: #b0944e; /* Цвет при наведении */
 }
 
 #tours img{
@@ -60,9 +82,13 @@ main {
 article{
     padding: 10px;
     margin: 10px;
-    background: #aaa9a93d;
+    background: #aaa9a975;
     border-radius: 10px;
     text-align: center;
+}
+
+article:hover{
+    background: #cac9c93d;
 }
 
 @media (max-width: 800px) {

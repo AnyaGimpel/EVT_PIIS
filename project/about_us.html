@@ -12,10 +12,12 @@
 </head>
 <body>
     <header>
-        <img id="main_img1" src="img/main1.jpg">
+        <img id="logoImg" src="img/main1.jpg">
         <div class="header-content">
             <div>
-                <img class="logo" src="img/logo.png" >
+                <a href="main.html">
+                    <img class="logo" src="img/logo.png" >
+                </a>
             </div>
             <nav class="list">
                 <ul>
@@ -24,7 +26,7 @@
                     <li><a href="about_us.html">О нас</a></li>
                     <li><a href="contacts.html">Контакты</a></li>
                     <li><button id="theme-toggle-btn" class="theme-toggle-btn">
-                        <img id="theme-toggle-img" src="img/icons8-солнце-50.png" alt="Сменить тему">
+                        <img id="theme-toggle-img" src="img/icons8-солнце-50.png" alt="Сменить тему" width="35px" height="35px">                        </button>
                         </button>
                     </li>
                 </ul>
@@ -42,7 +44,10 @@
                     <li><a href="catalog.html">Каталог</a></li>
                     <li><a href="about_us.html">О нас</a></li>
                     <li><a href="contacts.html">Контакты</a></li>
-                    <li><a href="">Тема</a></li>
+                    <li><button id="theme-toggle-btn1" class="theme-toggle-btn">
+                        <img id="theme-toggle-img1" src="img/icons8-солнце-2.png" alt="Сменить тему" width="35px" height="35px">
+                        </button>
+                    </li>
             </ul>
         </nav>
     </div>
@@ -50,7 +55,7 @@
     <main>
         <h1 class="title">О нас</h1>
         <div class="about">
-            <img class="about_img"src="img/about_img.png">
+            <img id="about_img" class="about_img" src="img/about_img.png">
             <div class="description">
                 <p class="p1"><strong>МЫ ПЕРВЫЕ, КТО СОБРАЛ ВСЕ ВИДЫ АВТОРСКИХ ТУРОВ В ОДНОМ МЕСТЕ. ВАМ ОСТАЕТСЯ ТОЛЬКО ВЫБРАТЬ</strong></p>
                 <p class="p2">Наша миссия – вдохновлять людей на новые открытия. Поэтому мы стремимся максимально облегчить путешествия с помощью цифровых технологий.</p> 
@@ -77,10 +82,9 @@
                     </article>
                 </section>
                 </div>
-               
-                 
             </div>
         </div>
+        <p></p>
     </main>
     <footer>
         <div class="footer-content">
@@ -91,6 +95,9 @@
                 <a class="footer_el" href="about_us.html">О нас</a>
                 <a class="footer_el" href="contacts.html">Контакты</a>
             </div>
+            <a href="#logoImg">
+                <img class="footer_arrow" src="img/icons8-стрелка.png">
+            </a>
         </div>
         <div class="footer_flex">
             <a class="footer_el">Адрес: г. Минск, ул. Нёманская, 15</a>

@@ -5,10 +5,16 @@ body {
     font-family: Arial, sans-serif;
 }
 
-main {
+.light-theme main {
     position: relative;
     width: 100%;
     overflow: hidden;
+}
+.dark-theme main {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: #eae0aa61;
 }
 
 .title {
@@ -20,10 +26,14 @@ main {
 article {
     padding: 10px;
     margin: 10px;
-    background: #aaa9a93d;
+    background: #aaa9a975;
     border-radius: 10px;
     text-align: center;
-  }
+}
+
+article:hover{
+    background: #cac9c93d;
+}
 
 #advantages-section {
     display: flex;
@@ -120,12 +130,17 @@ input[type="radio"] {
     transform: translateX(-200%);
 }
 
-#slide1:checked ~ .navigation label:nth-child(1),
-#slide2:checked ~ .navigation label:nth-child(2),
-#slide3:checked ~ .navigation label:nth-child(3) {
+.light-theme #slide1:checked ~ .navigation label:nth-child(1),
+.light-theme #slide2:checked ~ .navigation label:nth-child(2),
+.light-theme #slide3:checked ~ .navigation label:nth-child(3) {
     background-color: #abc232; /* Изменяем цвет активной точки */
 }
 
+.dark-theme #slide1:checked ~ .navigation label:nth-child(1),
+.dark-theme #slide2:checked ~ .navigation label:nth-child(2),
+.dark-theme #slide3:checked ~ .navigation label:nth-child(3) {
+    background-color: #db830f; /* Изменяем цвет активной точки */
+}
 
 header h1 {
     margin: 20px; 

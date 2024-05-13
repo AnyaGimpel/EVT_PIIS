@@ -1,0 +1,141 @@
+body .wrapper {
+    max-width: 100% !important;
+    text-align: center;
+}
+
+.header {
+    position: fixed;  /* закрепляем хедер */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #6ef5ff; 
+    /*  z-index: 1000; Устанавливаем z-index, чтобы header был поверх других элементов */
+    padding: 10px 20px; 
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #6ef5ff; 
+    padding: 10px 20px; 
+}
+
+.footer a {
+    color: blue !important;
+    text-decoration: underline !important;
+}
+
+.footer a:hover {
+    cursor: pointer !important;
+}
+
+
+.main {
+    width: 100%;
+}
+
+
+.main p, .main h2, .main h3, .main img {
+    font-style: normal !important; /* убираем курсив */
+}
+
+.aside blockquote {
+    font-style: italic; /* добавляем курсив для цитат */
+}
+
+
+
+
+.article.first>p:nth-of-type(3)::first-letter {
+    color: red;
+    font-size: 24px;
+    font-weight: bold;
+}
+.article.first img {
+    float: left;
+    height: 100px !important;
+    width: 80px;
+}
+
+.article.second>p:nth-of-type(2)::first-letter {
+    color: red;
+    font-size: 24px;
+    font-weight: bold;
+}
+.article.second img {
+    float: right;
+    height: 120px !important;
+    width: 100px;
+}
+
+.article.third>p:nth-of-type(2)::first-letter {
+    color: red;
+    font-size: 24px;
+    font-weight: bold;
+}
+.article.third img {
+    float: left;
+    height: 120px !important;
+    width: 180px;
+}
+
+.article.fourth>p:nth-of-type(2)::first-letter {
+    color: red;
+    font-size: 24px;
+    font-weight: bold;
+}
+.article.fourth img {
+    float: right;
+    height: 130px !important;
+    width: 180px;
+}
+
+.article.fifth>p:nth-of-type(4)::first-letter {
+    color: red;
+    font-size: 24px;
+    font-weight: bold;
+}
+.article.fifth img {
+    float: left;
+    height: 120px !important;
+    width: 180px;
+}
+
+
+
+p.word {
+    position: sticky;
+    top: 50px;
+    display: inline-block;
+    background-color: rgb(17, 128, 0);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+}
+
+p.word.first {
+    opacity: 90%;
+    left: 0px;
+    margin-left: 0;
+}
+
+p.word.second {
+    opacity: 80%;
+    margin-left: 120px;
+}
+
+p.word.third {
+    opacity: 70%;
+    margin-left: 230px;
+}
+
+p.word.fourth {
+    opacity: 60%;
+    margin-left: 390px;
+}
+
+p.word.fifth {
+    opacity: 50%;
+    margin-left: 570px;
+}

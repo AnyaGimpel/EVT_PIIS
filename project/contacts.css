@@ -1,7 +1,13 @@
-main {
+.light-theme main {
     position: relative;
     width: 100%;
     overflow: hidden;
+}
+.dark-theme main {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: #eae0aa61;
 }
 .title {
     color: #000000;
@@ -26,6 +32,10 @@ main {
 iframe{
     width: 500px;
     height: 300px
+}
+
+#where a:hover {
+    color: #6b8ae9;
 }
 
 .light-theme .details button {
