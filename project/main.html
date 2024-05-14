@@ -109,14 +109,19 @@
             </a>
         </div>
         <div class="footer_flex">
-            <a class="footer_el">Адрес: г. Минск, ул. Нёманская, 15</a>
-            <a class="footer_el">Телефон: +375-29-123-45-66</a>
+            <a class="footer_el" href="https://www.google.com/maps/search/г.+Минск,+ул.+Нёманская,+15" target="_blank">Адрес: г. Минск, ул. Нёманская, 15</a>
+            <a class="footer_el" onclick="callNumber('+375291234566')">Телефон: +375-29-123-45-66</a>
         </div>
         
     </footer>
 
     <script>
-        const applyTheme = (theme) => {
+
+        function callNumber(phoneNumber) {
+            window.location.href = 'tel:' + phoneNumber;
+        }
+
+    const applyTheme = (theme) => {
     const body = document.body;
     const themeToggleImg = document.getElementById('theme-toggle-img');
     const mainImg = document.getElementById('main_img');
@@ -196,6 +201,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 menuContent.style.transform = 'translateX(0px)'
             });
         });
+
+
     </script>
 </body>
 
