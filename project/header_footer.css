@@ -2,24 +2,23 @@ header {
     padding: 0;
     width: 100%;
     margin: 0;
-    position: relative; /* добавлено для абсолютного позиционирования дочерних элементов */
-    overflow: hidden; /* чтобы обрезать изображение, если оно выходит за пределы хедера */
+    position: relative; /* Для абсолютного позиционирования дочерних элементов */
+    overflow: hidden; /* Чтобы обрезать изображение, если оно выходит за пределы хедера */
 
 }
 
 .header-content {
     position: absolute;
-    top: 0; /* располагаем по верхнему краю */
-    left: 0; /* выравниваем по левому краю */
-    
+    top: 0; 
+    left: 0; 
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     padding: 10px;
-    box-sizing: border-box; /* чтобы padding не добавлялся к ширине */
-    z-index: 1; /* чтобы располагался поверх изображения */
-    background: linear-gradient(to bottom, #3b3a3af3, #4e4d4d00); /* Градиент от полностью непрозрачного к полностью прозрачному */
+    box-sizing: border-box; /* Чтобы padding не добавлялся к ширине */
+    z-index: 1; /* Чтобы располагался поверх изображения */
+    background: linear-gradient(to bottom, #3b3a3af3, #4e4d4d00);
 }
 
 .list ul li {
@@ -56,9 +55,9 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%; /* Примерная ширина контента */
-    max-width: 800px; /* Максимальная ширина контента */
-    text-align: center; /* Центрируем содержимое по горизонтали */
+    width: 80%; 
+    max-width: 800px; 
+    text-align: center; 
 }
 
 .main_title {
@@ -69,11 +68,11 @@ header {
 
 
 .light-theme .highlighted-text {
-    color: #abc232; /* Цвет для выделенной части текста */
+    color: #abc232; 
 }
 
 .dark-theme .highlighted-text {
-    color: #db830f; /* Цвет для выделенной части текста */
+    color: #db830f; 
 }
 
 .logo {
@@ -101,21 +100,21 @@ header {
 
 .search-box {
     display: flex;
-    flex-direction: column; /* Располагаем элементы в столбец */
-    align-items: center; /* Центрируем элементы по горизонтали */
+    flex-direction: column; 
+    align-items: center; 
     background-color: none;
-    border-radius: 20px; /* Закругление углов */
+    border-radius: 20px; 
     padding: 10px;
     margin-top: 20px;
 }
 
 .search-box input[type="text"] {
-    width: 60%; /* Ширина поля ввода, учитывая ширину кнопки */
+    width: 60%; 
     height: 30px;
     padding: 8px;
     border: none;
-    border-radius: 10px; /* Закругление углов */
-    margin-bottom: 10px; /* Отступ между полем ввода и кнопкой */
+    border-radius: 10px; 
+    margin-bottom: 10px;
     font-size: 16px;
 }
 
@@ -123,24 +122,24 @@ header {
     background-color: #abc232;
     color: #ffffff;
     border: none;
-    border-radius: 10px; /* Закругление углов */
+    border-radius: 10px; 
     width: calc(60% + 16px);
     font-size: 18px;
     padding: 12px 24px;
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Плавное изменение цвета при наведении */
+    transition: background-color 0.3s ease; 
 }
 
 .dark-theme .search-box button {
     background-color: #db830f;
     color: #ffffff;
     border: none;
-    border-radius: 10px; /* Закругление углов */
+    border-radius: 10px; 
     width: calc(60% + 16px);
     font-size: 18px;
     padding: 12px 24px;
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Плавное изменение цвета при наведении */
+    transition: background-color 0.3s ease; 
 }
 
 .light-theme .search-box button:hover {

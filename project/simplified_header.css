@@ -24,8 +24,8 @@ header {
 
 .header-content {
     position: absolute;
-    top: 0; /* располагаем по верхнему краю */
-    left: 0; /* выравниваем по левому краю */
+    top: 0; 
+    left: 0; 
     
     display: flex;
     justify-content: space-between;
@@ -34,7 +34,7 @@ header {
     padding: 10px;
     box-sizing: border-box; /* чтобы padding не добавлялся к ширине */
     z-index: 1; /* чтобы располагался поверх изображения */
-    background: linear-gradient(to bottom, #3b3a3af3, #4e4d4d00); /* Градиент от полностью непрозрачного к полностью прозрачному */
+    background: linear-gradient(to bottom, #3b3a3af3, #4e4d4d00); 
 }
 
 .list ul li {

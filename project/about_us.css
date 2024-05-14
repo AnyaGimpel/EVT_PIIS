@@ -5,7 +5,7 @@ main {
 }
 
 html {
-    scroll-behavior: smooth; /* Добавляем плавный переход до якоря */
+    scroll-behavior: smooth; /* Плавный переход до якоря */
 }
 
 .title {
@@ -27,7 +27,6 @@ html {
         height: 250px;
     }
 }
-
 
 .about{
     display: flex;
@@ -69,7 +68,6 @@ article{
 }
 
 
-
 #numbers-section1 {
     display: flex;
     justify-content: center; /* Центрирование элементов по горизонтали */
@@ -92,6 +90,6 @@ article{
 
 @media (max-width: 380px) {
     main {
-        overflow-x: auto; /* Добавляем горизонтальную полосу прокрутки */
+        overflow-x: auto; /* Горизонтальная полоса прокрутки */
     }
 }

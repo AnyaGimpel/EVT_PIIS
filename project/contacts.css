@@ -5,7 +5,7 @@ main {
 }
 
 html {
-    scroll-behavior: smooth; /* Добавляем плавный переход до якоря */
+    scroll-behavior: smooth; /* Плавный переход до якоря */
 }
 
 .title {
@@ -41,7 +41,7 @@ iframe{
     background-color: #abc232;
     color: #ffffff;
     border: none;
-    border-radius: 10px; /* Закругление углов */
+    border-radius: 10px; 
     width: 200px;
     font-size: 18px;
     padding: 12px 24px;
@@ -54,7 +54,7 @@ iframe{
     background-color: #db830f;
     color: #ffffff;
     border: none;
-    border-radius: 10px; /* Закругление углов */
+    border-radius: 10px; 
     width: 200px;
     font-size: 18px;
     padding: 12px 24px;
@@ -64,10 +64,10 @@ iframe{
 }
 
 .light-theme .details button:hover {
-    background-color: #899e51; /* Цвет при наведении */
+    background-color: #899e51; 
 }
 .dark-theme .details button:hover {
-    background-color: #b0944e; /* Цвет при наведении */
+    background-color: #b0944e; 
 }
 
 #where a{
@@ -110,6 +110,6 @@ iframe{
 
 @media (max-width: 380px) {
     main {
-        overflow-x: auto; /* Добавляем горизонтальную полосу прокрутки */
+        overflow-x: auto; /* Горизонтальная полоса прокрутки */
     }
 }
