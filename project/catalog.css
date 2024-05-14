@@ -1,13 +1,11 @@
-.light-theme main {
+main {
     position: relative;
     width: 100%;
     overflow: hidden;
 }
-.dark-theme main {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    background-color: #eae0aa61;
+
+html {
+    scroll-behavior: smooth; /* Добавляем плавный переход до якоря */
 }
 
 .title {
@@ -170,5 +168,19 @@ article:hover{
         margin-left: auto;
         margin-right: auto;
         width: 95%;  
+    }
+}
+
+.light-theme {
+    background-color: #ffffff;
+}
+
+.dark-theme {
+    background-color: #eae0aa61;
+}
+
+@media (max-width: 380px) {
+    main {
+        overflow-x: auto; /* Добавляем горизонтальную полосу прокрутки */
     }
 }

@@ -3,24 +3,23 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+
 }
 
-.light-theme main {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
+html {
+    scroll-behavior: smooth; /* Добавляем плавный переход до якоря */
 }
-.dark-theme main {
+
+main {
     position: relative;
     width: 100%;
     overflow: hidden;
-    background-color: #eae0aa61;
 }
 
 .title {
     color: #000000;
     font-size: 40px;
-    text-align: center; /* Выравнивание текста по центру */
+    text-align: center; 
 }
 
 article {
@@ -39,16 +38,16 @@ article:hover{
     display: flex;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 819px) {
     #advantages-section {
-        flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
+        flex-wrap: wrap; 
     }
     #advantages-section article {
-        width: 100%; /* Элементы занимают всю доступную ширину */
+        width: 100%; 
     }
 }
 
-@media (min-width: 769px) and (max-width: 1200px) {
+@media (min-width: 820px) and (max-width: 1200px) {
     #advantages-section article {
         width: 48%; 
     }
@@ -89,6 +88,7 @@ article:hover{
 
 .slides {
     display: flex;
+    animation: slideAnimation 10s infinite;
 }
 
 .slide {
@@ -96,50 +96,20 @@ article:hover{
     background-size: cover;
 }
 
-input[type="radio"] {
-    display: none; /* Скрываем радиокнопки */
-}
 
-.navigation {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.navigation label {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    background-color: #a09e9e;
-    border-radius: 50%;
-    margin: 0 5px;
-    cursor: pointer;
-}
-
-
-#slide1:checked ~ .slides .slide:nth-child(1) {
-    transform: translateX(0);
-}
-
-#slide2:checked ~ .slides .slide:nth-child(2) {
-    transform: translateX(-100%);
-}
-
-#slide3:checked ~ .slides .slide:nth-child(3) {
-    transform: translateX(-200%);
-}
-
-.light-theme #slide1:checked ~ .navigation label:nth-child(1),
-.light-theme #slide2:checked ~ .navigation label:nth-child(2),
-.light-theme #slide3:checked ~ .navigation label:nth-child(3) {
-    background-color: #abc232; /* Изменяем цвет активной точки */
-}
-
-.dark-theme #slide1:checked ~ .navigation label:nth-child(1),
-.dark-theme #slide2:checked ~ .navigation label:nth-child(2),
-.dark-theme #slide3:checked ~ .navigation label:nth-child(3) {
-    background-color: #db830f; /* Изменяем цвет активной точки */
+@keyframes slideAnimation {
+    0% {
+        transform: translateX(0);
+    }
+    33.33% {
+        transform: translateX(0);
+    }
+    66.66% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(-200%);
+    }
 }
 
 header h1 {
@@ -147,17 +117,28 @@ header h1 {
 }
 
 
-@media (max-width: 380px) {
-    body {
-        overflow-x: auto; /* Добавляем горизонтальную полосу прокрутки */
-    }
-}
+
 
 @media (min-width: 1541px) { 
     body { 
         width: 100%; 
         max-width: 1440px; 
         margin-left: auto; 
-        margin-right: auto; 
+        margin-right: auto;
     } 
+}
+
+.light-theme {
+    background-color: #ffffff;
+}
+
+.dark-theme {
+    background-color: #eae0aa61;
+}
+
+
+@media (max-width: 380px) {
+    main {
+        overflow-x: auto; /* Добавляем горизонтальную полосу прокрутки */
+    }
 }

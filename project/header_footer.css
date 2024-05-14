@@ -16,7 +16,7 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 20px;
+    padding: 10px;
     box-sizing: border-box; /* чтобы padding не добавлялся к ширине */
     z-index: 1; /* чтобы располагался поверх изображения */
     background: linear-gradient(to bottom, #3b3a3af3, #4e4d4d00); /* Градиент от полностью непрозрачного к полностью прозрачному */
@@ -243,7 +243,7 @@ footer {
 }
 
 
-@media (max-width: 1199px) {
+@media (max-width: 768px) {
 
     .list {
         display: none;
@@ -267,7 +267,7 @@ footer {
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 769px) {
     .list {
         display: block;
     }
